@@ -61,7 +61,7 @@ Single-variable analysis evaluated academic, skill, exposure, lifestyle, and soc
 
 Combined factor interactions were analyzed to identify high-impact employability profiles.
 
-**Phase 7 - Visualization **
+**Phase 7 - Visualization**
 
 Using collab-notebook ,visualized various charts 
 
