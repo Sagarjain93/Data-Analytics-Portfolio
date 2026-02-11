@@ -116,7 +116,8 @@ My focus areas:
 
 ## Connect With Me
 
-LinkedIn:www.linkedin.com/in/sagar-jain-558172162
+LinkedIn: www.linkedin.com/in/sagar-jain-558172162
+
 GitHub: https://github.com/Sagarjain93
 
 ---
