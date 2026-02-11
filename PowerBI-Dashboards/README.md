@@ -32,7 +32,7 @@ The focus of these projects is on:
 ---
 
 ## Folder Structure
-
+```
 project_name/
 
 │
@@ -40,7 +40,7 @@ project_name/
 ├── Dashboard.pbix
 ├── Dashboard_Screenshots/
 ├── README.md
-
+```
 ---
 
 ## Purpose of This Section
