@@ -4,95 +4,181 @@
 
 <img width="948" height="533" alt="image" src="https://github.com/user-attachments/assets/89526417-ac14-475b-91d4-1a43c3bf1092" />
 
-**Problem Statement**
+**Project Overview**
 
-The Google Play Store is one of the world’s largest app marketplaces, hosting thousands of apps across diverse categories. With growing competition, understanding the factors that influence app success (ratings, installs, reviews, and sentiments) is critical. This project explores Play Store data to uncover patterns, correlations, and business insights that can guide developers, businesses, and users in making better data-driven decisions.
+The Google Play Store hosts millions of apps across various categories, making it a highly competitive marketplace. For developers and businesses, understanding what drives app success is critical for improving visibility, user engagement, and growth.
 
-**Dataset Description**
+This project performs an end-to-end Exploratory Data Analysis (EDA) on Google Play Store data along with user reviews to identify key factors that influence app performance, installs, ratings, and user sentiment.
 
-*  We use two datasets for this project:
+The goal of this analysis is to generate data-driven insights that can help stakeholders make informed decisions related to app development, pricing strategy, user engagement, and market positioning.
 
-1. Play Store Data (10,841 rows × 13 columns)
 
-  Contains app-level details such as category, rating, size, installs, type, price, and genres.
 
-2. User Reviews Data (64,295 rows × 5 columns)
+**Business Problem**
 
-  Contains user reviews, translated text, sentiment, polarity, and subjectivity.
+With thousands of apps competing for user attention, developers need to understand:
 
-*  These datasets are merged on the common column “App” after appropriate cleaning and preprocessing.
+What drives higher installs?
 
-**Data Preprocessing**
+Do ratings impact app success?
 
-*  Dropped duplicate rows (483 duplicates found)
+How do free and paid apps perform?
 
-*  Handled missing values (ratings, sentiment polarity, subjectivity, version details)
+Does app size or price affect user adoption?
 
-*  Cleaned Installs and Price columns by removing symbols (+, $, ,) and converting to numeric
+Which categories are most competitive?
 
-*  Converted Size to numeric (standardized MB/KB)
+How does user sentiment relate to app popularity?
 
-*  Aggregated sentiment polarity and subjectivity at the app level from user reviews
+This project aims to answer these questions using real-world Play Store data.
 
-*  Merged Play Store and Review data for enriched insights
+**Dataset Information**
 
+Two datasets were used:
+
+**1. Google Play Store Dataset**
+
+~10,800 apps
+
+Features include:
+
+App Name
+
+Category
+
+Rating
+
+Reviews
+
+Size
+
+Installs
+
+Type (Free/Paid)
+
+Price
+
+Content Rating
+
+Last Updated
+
+**2. User Reviews Dataset**
+
+~64,000 user reviews
+
+Features include:
+
+Review text
+
+Sentiment (Positive/Neutral/Negative)
+
+Sentiment Polarity
+
+Sentiment Subjectivity
+
+The review data was aggregated at the app level and merged with the Play Store dataset.
+
+**Data Cleaning & Preparation**
+
+The following preprocessing steps were performed:
+
+Removed duplicate records
+
+Handled missing values using median/mode
+
+Standardized column names
+
+Cleaned numeric fields:
+
+Converted Installs to integers
+
+Removed currency symbols from Price
+
+Converted Size into MB
+
+Converted date columns to datetime format
+
+Aggregated user reviews:
+
+Positive, Neutral, Negative counts
+
+Average sentiment polarity & subjectivity
+
+Merged both datasets into a final dataset with ~10,300 apps and 18 features
 
 **Exploratory Data Analysis (EDA)**
 
-Key areas explored:
+Analysis was performed to understand:
 
-*  Distribution of apps across categories
+App distribution by category and genre
 
-*   Rating distribution and missing value patterns
+Free vs Paid app performance
 
-*   Installs vs Ratings relationship
+Content rating distribution
 
-*   Free vs Paid apps analysis
+App size distribution
 
-*   Impact of app size and price on popularity
+Category vs installs
 
-*   User sentiments aggregated by app and category
+Type vs rating and installs
 
-*   Top categories by installs and reviews
+Price vs installs (Paid apps)
 
-**Key Observations**
+App size vs installs
 
-*  Around 14% ratings were missing → may affect popularity analysis.
+Reviews distribution across categories
 
-*  Free apps dominate (most installs, wider reach) while paid apps are niche.
+Correlation analysis between key numerical variables
 
-*  App size doesn’t strongly affect installs, but extremely large apps are less popular.
+**Visualization libraries used:**
 
-*  User sentiment polarity gives additional context beyond ratings (e.g., some apps have average ratings but highly positive/negative reviews).
+Matplotlib
 
-*  Games, Communication, and Tools lead in installs, while Family and Education categories dominate by volume.
+Seaborn
 
-**Tools & Libraries Used**
+**Key Insights**
 
-*  Python 
+*  User engagement drives success
+  Reviews show a strong positive correlation (0.63) with installs.
 
-*  Pandas, NumPy → Data Cleaning & Preprocessing
+*  Free apps dominate the market
+  Free apps receive significantly higher installs than paid apps.
 
-*  Matplotlib, Seaborn → Data Visualization
+*  Paid apps have slightly higher ratings but lower adoption
 
+*  Most apps maintain high ratings (4.0–4.5) across categories.
 
-**Business Impact**
+*  App success follows a long-tail distribution
+  A small number of apps capture the majority of installs and reviews.
 
-*  Helps developers optimize pricing, size, and features based on market trends.
+*  Price and app size show weak correlation with installs
 
-*  Businesses can identify profitable app categories and areas of improvement.
+*  Categories like Game, Communication, Social, and Tools generate the highest user engagement
 
-*  Provides insights into user satisfaction and engagement via sentiment analysis.
+**Business Recommendations**
 
-*  Supports data-driven decision-making for app marketing and updates.
+Based on the analysis:
 
-**Conclusion**
+Adopt a freemium model to maximize user acquisition
 
-*  This EDA provides actionable insights into what drives app success in the Google Play Store.
-*  By combining app metadata with user sentiments, we highlight both quantitative and qualitative factors that influence installs and ratings, helping stakeholders better understand the dynamics of the app marketplace.
+Focus on increasing user engagement and reviews
 
-**Author**
+Target a broader audience (Everyone/Teen)
 
-Sagar Jain
+Optimize app size for better accessibility
 
-LinkedIn : https://www.linkedin.com/in/sagar-jain-558172162/
+Prioritize performance, stability, and user experience over pricing strategies
+
+**Tools & Technologies**
+
+Python
+
+Pandas
+
+NumPy
+
+Matplotlib
+
+Seaborn
+
+Jupyter Notebook
