@@ -4,6 +4,7 @@
 
 <img width="948" height="533" alt="image" src="https://github.com/user-attachments/assets/89526417-ac14-475b-91d4-1a43c3bf1092" />
 
+---- 
 **Project Overview**
 
 The Google Play Store hosts millions of apps across various categories, making it a highly competitive marketplace. For developers and businesses, understanding what drives app success is critical for improving visibility, user engagement, and growth.
@@ -12,6 +13,7 @@ This project performs an end-to-end Exploratory Data Analysis (EDA) on Google Pl
 
 The goal of this analysis is to generate data-driven insights that can help stakeholders make informed decisions related to app development, pricing strategy, user engagement, and market positioning.
 
+----
 
 
 **Business Problem**
@@ -31,6 +33,8 @@ Which categories are most competitive?
 How does user sentiment relate to app popularity?
 
 This project aims to answer these questions using real-world Play Store data.
+
+----
 
 **Dataset Information**
 
@@ -78,6 +82,8 @@ Sentiment Subjectivity
 
 The review data was aggregated at the app level and merged with the Play Store dataset.
 
+-----
+
 **Data Cleaning & Preparation**
 
 The following preprocessing steps were performed:
@@ -106,6 +112,8 @@ Average sentiment polarity & subjectivity
 
 Merged both datasets into a final dataset with ~10,300 apps and 18 features
 
+----
+
 **Exploratory Data Analysis (EDA)**
 
 Analysis was performed to understand:
@@ -130,11 +138,15 @@ Reviews distribution across categories
 
 Correlation analysis between key numerical variables
 
+----
+
 **Visualization libraries used:**
 
 Matplotlib
 
 Seaborn
+
+----
 
 **Key Insights**
 
@@ -155,6 +167,8 @@ Seaborn
 
 *  Categories like Game, Communication, Social, and Tools generate the highest user engagement
 
+----
+
 **Business Recommendations**
 
 Based on the analysis:
@@ -169,6 +183,8 @@ Optimize app size for better accessibility
 
 Prioritize performance, stability, and user experience over pricing strategies
 
+----
+
 **Tools & Technologies**
 
 Python
@@ -182,3 +198,36 @@ Matplotlib
 Seaborn
 
 Jupyter Notebook
+
+---
+
+**Project Structure**
+
+```
+Google-Play-Store-Analysis/
+│
+├── data/
+│   ├── googleplaystore.csv
+│   └── googleplaystore_user_reviews.csv
+│
+├── notebooks/
+│   └── PlayStore_EDA.ipynb
+│
+├── images/
+│   └── EDA visualizations
+│
+└── README.md
+```
+
+--- 
+
+**Conclusion**
+
+This project demonstrates how exploratory data analysis can uncover meaningful patterns in app performance and user behavior. The findings highlight that user engagement and accessibility are the key drivers of app success, rather than price or size alone. These insights can help developers and businesses design better strategies to improve visibility, user satisfaction, and long-term growth in the competitive mobile app ecosystem.
+
+---
+
+**Author**
+
+Sagar Jain
+Aspiring Data Analyst | Python | SQL | EDA | Data Visualization
