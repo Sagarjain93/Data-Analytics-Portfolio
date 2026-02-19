@@ -1,8 +1,8 @@
 **Google Play Store Apps EDA**
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/c6a80608-e00e-401c-bc4e-6b0cf73435e5" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c6a80608-e00e-401c-bc4e-6b0cf73435e5" />
 
-<img width="948" height="533" alt="image" src="https://github.com/user-attachments/assets/89526417-ac14-475b-91d4-1a43c3bf1092" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/89526417-ac14-475b-91d4-1a43c3bf1092" />
 
 ---- 
 **Project Overview**
@@ -109,6 +109,53 @@ Analysis was performed to understand:
 *  Correlation analysis between key numerical variables
 
 ----
+
+## Key Visual Insights
+
+## 1. Correlation Between Key Variables
+
+<img width="844" height="741" alt="12_Co-relation_Heat_Map" src="https://github.com/user-attachments/assets/1457c1de-611b-4524-8264-bfd5f9135033" />
+
+**Insight:** Reviews show a strong positive correlation (0.63) with installs, indicating that user engagement is a major driver of app success. In contrast, rating, price, and size have weak relationships with installs.
+
+---
+
+## 2. Free vs Paid Apps – Install Comparison
+
+<img width="784" height="584" alt="03_Count_Free_vs_Paid_Apps" src="https://github.com/user-attachments/assets/cd3b8a25-f4e4-4638-a361-57e239fe1a32" />
+
+
+**Insight:** Free apps significantly outperform paid apps in terms of installs, suggesting that pricing acts as a barrier to adoption and that a freemium model is more effective for growth.
+
+--- 
+
+## 3. Category vs Installs Distribution
+
+<img width="1014" height="734" alt="06_Category_vs_Installs" src="https://github.com/user-attachments/assets/b0c38d5d-660c-4220-83c9-ab26ae82fdeb" />
+
+
+**Insight:** Categories such as Game, Communication, Social, and Tools show the highest install ranges, but the distribution is highly skewed, indicating that only a few apps dominate user adoption.
+
+---
+
+## 4. Reviews Distribution Across Categories
+
+<img width="1401" height="734" alt="11_Review_Distribution_Among_Category" src="https://github.com/user-attachments/assets/e14c1b8e-5fd6-428b-9085-fc4a1bf1721b" />
+
+
+**Insight:** Review counts are heavily concentrated among a small number of apps, reinforcing the strong link between user engagement and install growth.
+
+---
+
+## 5. Ratings Across Categories
+
+<img width="1166" height="888" alt="13_Rating_Across_Category" src="https://github.com/user-attachments/assets/af89465e-c8af-4379-b380-440e045e3412" />
+
+
+**Insight:** Most categories maintain high ratings (4.0–4.5), suggesting generally positive user sentiment across the Play Store ecosystem.
+
+---
+
 
 **Visualization libraries used:**
 
