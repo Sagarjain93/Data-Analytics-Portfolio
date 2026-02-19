@@ -20,17 +20,17 @@ The goal of this analysis is to generate data-driven insights that can help stak
 
 With thousands of apps competing for user attention, developers need to understand:
 
-What drives higher installs?
+*  What drives higher installs?
 
-Do ratings impact app success?
+*  Do ratings impact app success?
 
-How do free and paid apps perform?
+*  How do free and paid apps perform?
 
-Does app size or price affect user adoption?
+*  Does app size or price affect user adoption?
 
-Which categories are most competitive?
+*  Which categories are most competitive?
 
-How does user sentiment relate to app popularity?
+*  How does user sentiment relate to app popularity?
 
 This project aims to answer these questions using real-world Play Store data.
 
@@ -44,41 +44,13 @@ Two datasets were used:
 
 ~10,800 apps
 
-Features include:
-
-App Name
-
-Category
-
-Rating
-
-Reviews
-
-Size
-
-Installs
-
-Type (Free/Paid)
-
-Price
-
-Content Rating
-
-Last Updated
+Features include: App Name | Category | Rating | Reviews | Size | Installs | Type (Free/Paid) | Price | Content Rating | Last Updated
 
 **2. User Reviews Dataset**
 
 ~64,000 user reviews
 
-Features include:
-
-Review text
-
-Sentiment (Positive/Neutral/Negative)
-
-Sentiment Polarity
-
-Sentiment Subjectivity
+Features include: Review text | Sentiment (Positive/Neutral/Negative) | Sentiment Polarity | Sentiment Subjectivity
 
 The review data was aggregated at the app level and merged with the Play Store dataset.
 
@@ -88,29 +60,27 @@ The review data was aggregated at the app level and merged with the Play Store d
 
 The following preprocessing steps were performed:
 
-Removed duplicate records
+*  Removed duplicate records
 
-Handled missing values using median/mode
+*  Handled missing values using median/mode
 
-Standardized column names
+*  Standardized column names
 
-Cleaned numeric fields:
+*  Cleaned numeric fields:
 
-Converted Installs to integers
+*  Converted Installs to integers
 
-Removed currency symbols from Price
+*  Removed currency symbols from Price
 
-Converted Size into MB
+*  Converted Size into MB
 
-Converted date columns to datetime format
+*  Converted date columns to datetime format
 
-Aggregated user reviews:
+*  Aggregated user reviews: Positive, Neutral, Negative counts
 
-Positive, Neutral, Negative counts
+*  Average sentiment polarity & subjectivity
 
-Average sentiment polarity & subjectivity
-
-Merged both datasets into a final dataset with ~10,300 apps and 18 features
+*  Merged both datasets into a final dataset with ~10,300 apps and 18 features
 
 ----
 
@@ -118,50 +88,47 @@ Merged both datasets into a final dataset with ~10,300 apps and 18 features
 
 Analysis was performed to understand:
 
-App distribution by category and genre
+*  App distribution by category and genre
 
-Free vs Paid app performance
+*  Free vs Paid app performance
 
-Content rating distribution
+*  Content rating distribution
 
-App size distribution
+*  App size distribution
 
-Category vs installs
+*  Category vs installs
 
-Type vs rating and installs
+*  Type vs rating and installs
 
-Price vs installs (Paid apps)
+*  Price vs installs (Paid apps)
 
-App size vs installs
+*  App size vs installs
 
-Reviews distribution across categories
+*  Reviews distribution across categories
 
-Correlation analysis between key numerical variables
+*  Correlation analysis between key numerical variables
 
 ----
 
 **Visualization libraries used:**
 
-Matplotlib
+*  Matplotlib
 
-Seaborn
+*  Seaborn
 
 ----
 
 **Key Insights**
 
-*  User engagement drives success
-  Reviews show a strong positive correlation (0.63) with installs.
+*  User engagement drives success - Reviews show a strong positive correlation (0.63) with installs.
 
-*  Free apps dominate the market
-  Free apps receive significantly higher installs than paid apps.
+*  Free apps dominate the market - Free apps receive significantly higher installs than paid apps.
 
 *  Paid apps have slightly higher ratings but lower adoption
 
 *  Most apps maintain high ratings (4.0–4.5) across categories.
 
-*  App success follows a long-tail distribution
-  A small number of apps capture the majority of installs and reviews.
+*  App success follows a long-tail distribution -  A small number of apps capture the majority of installs and reviews.
 
 *  Price and app size show weak correlation with installs
 
@@ -173,31 +140,31 @@ Seaborn
 
 Based on the analysis:
 
-Adopt a freemium model to maximize user acquisition
+*  Adopt a freemium model to maximize user acquisition
 
-Focus on increasing user engagement and reviews
+*  Focus on increasing user engagement and reviews
 
-Target a broader audience (Everyone/Teen)
+*  Target a broader audience (Everyone/Teen)
 
-Optimize app size for better accessibility
+*  Optimize app size for better accessibility
 
-Prioritize performance, stability, and user experience over pricing strategies
+*  Prioritize performance, stability, and user experience over pricing strategies
 
 ----
 
 **Tools & Technologies**
 
-Python
+*  Python
 
-Pandas
+*  Pandas
 
-NumPy
+*  NumPy
 
-Matplotlib
+*  Matplotlib
 
-Seaborn
+*  Seaborn
 
-Jupyter Notebook
+*  Jupyter Notebook
 
 ---
 
@@ -210,8 +177,7 @@ Google-Play-Store-Analysis/
 │   ├── googleplaystore.csv
 │   └── googleplaystore_user_reviews.csv
 │
-├── notebooks/
-│   └── PlayStore_EDA.ipynb
+├──── PlayStore_EDA.ipynb
 │
 ├── images/
 │   └── EDA visualizations
@@ -223,11 +189,11 @@ Google-Play-Store-Analysis/
 
 **Conclusion**
 
-This project demonstrates how exploratory data analysis can uncover meaningful patterns in app performance and user behavior. The findings highlight that user engagement and accessibility are the key drivers of app success, rather than price or size alone. These insights can help developers and businesses design better strategies to improve visibility, user satisfaction, and long-term growth in the competitive mobile app ecosystem.
+_This project demonstrates how exploratory data analysis can uncover meaningful patterns in app performance and user behavior. The findings highlight that user engagement and accessibility are the key drivers of app success, rather than price or size alone. These insights can help developers and businesses design better strategies to improve visibility, user satisfaction, and long-term growth in the competitive mobile app ecosystem._
 
 ---
 
 **Author**
 
-Sagar Jain
-Aspiring Data Analyst | Python | SQL | EDA | Data Visualization
+**Sagar Jain**
+**Aspiring Data Analyst | Python | SQL | EDA | Data Visualization**
