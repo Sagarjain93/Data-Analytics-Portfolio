@@ -1,4 +1,4 @@
-**Indian Engineering Student Placement — SQL EDA Analysis**
+# **Indian Engineering Student Placement — SQL EDA Analysis**
 
 
 🔷 **Project Overview**
@@ -7,19 +7,23 @@ This project analyzes placement outcomes among Indian engineering students using
 
 The project follows a structured analytics pipeline including data ingestion, schema design, data quality validation, cleaning transformations, and multi-layer exploratory analysis.
 
+--- 
+
 🔷 **Dataset Description**
 
 The dataset contains approximately 5,000 engineering student records with:
 
-Academic performance indicators
+*  Academic performance indicators
 
-Skill assessment ratings
+*  Skill assessment ratings
 
-Practical exposure metrics
+*  Practical exposure metrics
 
-Lifestyle and socioeconomic background
+*  Lifestyle and socioeconomic background
 
-Placement status and salary outcomes
+*  Placement status and salary outcomes
+
+  ---
 
 🔷 **Methodology**
 
@@ -65,6 +69,8 @@ Combined factor interactions were analyzed to identify high-impact employability
 
 Using collab-notebook ,visualized various charts 
 
+---
+
 🔷 **Key Insights**
 
 **Academic Performance**
@@ -87,6 +93,8 @@ Internet accessibility, extracurricular participation, and stable study routines
 
 Outlier students frequently display strong practical exposure and occasionally achieve higher salary outcomes.
 
+--- 
+
 🔷 **Business Recommendations**
 
 Encourage internship participation as early as possible
@@ -98,6 +106,8 @@ Provide technical skill development programs
 Improve digital accessibility for students from lower socioeconomic backgrounds
 
 Offer stress and lifestyle management support programs
+
+----
 
 **Visualization & Analytical Insights**
 
@@ -146,30 +156,42 @@ Moderate lifestyle balance patterns, particularly balanced sleep cycles, demonst
 Combined exposure scoring based on internships, projects, and certifications emerges as the strongest placement predictor. Students with high exposure levels show overwhelmingly higher placement success, highlighting experiential learning as the most influential employability driver.
 <img width="704" height="470" alt="image" src="https://github.com/user-attachments/assets/c58019b5-b724-4f61-b1bd-2442c24e0cb3" />
 
+----
 
 
 🔷 **Tools & Skills Demonstrated**
 
-PostgreSQL
+*  PostgreSQL
 
-Data Cleaning & Standardization
+*  Data Cleaning & Standardization
 
-Exploratory Data Analysis
+*  Exploratory Data Analysis
 
-Analytical SQL (CTEs, Window Functions, Aggregations)
+*  Analytical SQL (CTEs, Window Functions, Aggregations)
 
-Data Quality Validation
+*  Data Quality Validation
 
-Multi-Factor Analytical Modeling
+*  Multi-Factor Analytical Modeling
 
-Visualization: Pandas, Matplotlib, Seaborn, Google Colab
+*  Visualization: Pandas, Matplotlib, Seaborn, Google Colab
 
-Data Storytelling
+*  Data Storytelling
+
+---
 
 🔷 **Project Structure**
+```
 01_raw_data/
 02_schema/
 03_cleaning/
 04_eda/
 05_Python_Visualization
 README.md
+```
+
+----
+
+🔷 **Author**
+
+**SAGAR JAIN**
+
